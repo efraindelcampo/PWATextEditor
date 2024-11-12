@@ -4,7 +4,7 @@ require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(express.static("../client/dist/index.html"));
+app.use(express.static("./client/dist"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
